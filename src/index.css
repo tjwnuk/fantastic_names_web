@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,83 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #494e9f;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  position: relative;
+  height: 600px;
+  margin-top: 30px;
+}
+
+.mainContainer {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  width: 1000px;
+  height: 100%;
+  background-color: ghostwhite;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  font-family: 'Square Peg', Arial;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.info {
+  text-align: center;
+  font-size: 12px;
+  line-height: 70%;
+}
+
+.inputs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 400px;
+}
+
+.left-column {
+  flex: 1;
+  /* background-color: yellow; */
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  margin-right: 2px;
+}
+
+.right-column {
+  flex: 1;
+  /* background-color: yellowgreen; */
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  margin-left: 2px;
 }
